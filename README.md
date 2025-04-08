@@ -1,50 +1,104 @@
-# Welcome to your Expo app 👋
+# React Native Auth App with Expo, Appwrite, and NativeWind
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern authentication application built with React Native, featuring a clean and scalable authentication flow using cutting-edge tools in the React Native ecosystem.
 
-## Get started
+## 🚀 Tech Stack
 
-1. Install dependencies
+- **React Native** - Cross-platform mobile development
+- **Expo** - Development platform and build tools
+- **Appwrite** - Backend as a Service (BaaS) for authentication
+- **NativeWind** - Utility-first CSS framework for React Native
+- **Zustand** - State management solution
+- **TypeScript** - Type safety and better developer experience
+
+## ✨ Features
+
+- 🔐 Complete authentication flow (Sign Up, Sign In, Password Reset)
+- 🎨 Modern UI with NativeWind styling
+- 📱 Responsive design for both iOS and Android
+- 🔄 Global state management with Zustand
+- 🛡️ Type-safe development with TypeScript
+- 🔒 Secure authentication with Appwrite
+
+## 📋 Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+- Expo CLI
+- Appwrite instance (local or cloud)
+- iOS Simulator (for Mac users) or Android Emulator
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+
+   ```bash
+   git clone <your-repo-url>
+   cd movie-app
+   ```
+
+2. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Set up environment variables**
+   Create a `.env` file in the root directory:
 
-   ```bash
-    npx expo start
+   ```
+   EXPO_PUBLIC_APPWRITE_ENDPOINT=your_appwrite_endpoint
+   EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_project_id
    ```
 
-In the output, you'll find options to open the app in a
+4. **Start the development server**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+   npx expo start
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+5. **Run on your preferred platform**
+   - Press `i` for iOS simulator
+   - Press `a` for Android emulator
+   - Scan QR code with Expo Go app for physical device
 
-## Get a fresh project
+## 📁 Project Structure
 
-When you're ready, run:
-
-```bash
-npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🔧 Configuration
 
-## Learn more
+### Appwrite Setup
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Create an Appwrite project
+2. Set up authentication methods (email/password)
+3. Configure your environment variables
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### NativeWind Setup
 
-## Join the community
+The project uses NativeWind for styling. Make sure to follow the configuration in `tailwind.config.js`.
 
-Join our community of developers creating universal apps.
+## 📱 Available Scripts
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `npm start` - Start the Expo development server
+- `npm run ios` - Start the iOS simulator
+- `npm run android` - Start the Android emulator
+- `npm run web` - Start the web version
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript type checking
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Expo](https://expo.dev)
+- [Appwrite](https://appwrite.io)
+- [NativeWind](https://www.nativewind.dev)
+- [Zustand](https://github.com/pmndrs/zustand)
+```
