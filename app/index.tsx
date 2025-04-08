@@ -1,15 +1,13 @@
-import { Text, View } from "react-native";
+import CustomInput from "@/shared/components/custom-inputs";
+import { ScrollView } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text className="">Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <SafeAreaView>
+      <ScrollView className="h-full">
+        <CustomInput title="Name" placeholder="Enter your name" />
+      </ScrollView>
+    </SafeAreaView>
   );
 }
