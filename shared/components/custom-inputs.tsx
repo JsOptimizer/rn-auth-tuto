@@ -36,7 +36,9 @@ const CustomInput: FC<Props> = ({
 
   return (
     <View className="gap-2 p-2">
-      <Text className="text-base font-medium">{title}</Text>
+      <Text className="text-lg font-helvetica-bold text-neutral-600 ">
+        {title}
+      </Text>
 
       <View>
         <View

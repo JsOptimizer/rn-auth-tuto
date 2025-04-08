@@ -32,6 +32,15 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/helvetica/Helvetica-Bold.ttf",
+            "./assets/fonts/helvetica/Helvetica.ttf"
+          ]
+        }
       ]
     ],
     "experiments": {
