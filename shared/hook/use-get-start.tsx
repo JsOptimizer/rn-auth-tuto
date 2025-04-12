@@ -4,7 +4,7 @@ export const useGetStart = () => {
   const router = useRouter();
 
   const getStartHandler = () => {
-    router.push("/(aut)/sign-up");
+    router.push("/(auth)/sign-in");
   };
 
   return { getStartHandler };
