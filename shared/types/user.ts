@@ -24,4 +24,13 @@ const signupSchema = z.object({
     ),
 });
 
+export type TFormStateError = {
+  email?: string[];
+  password?: string[];
+  lastName?: string[];
+  firstName?: string[];
+};
+
+export const signInSchema = signupSchema.pick({ email: true, password: true });
+
 export type TSignup = z.infer<typeof signupSchema>;

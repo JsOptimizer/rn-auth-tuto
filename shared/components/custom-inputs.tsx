@@ -43,7 +43,7 @@ const CustomInput: FC<Props> = ({
           className={`w-full h-16 px-4 bg-neutral-100 rounded-2xl border-2 ${getBorderColor()} flex flex-row items-center`}
         >
           <TextInput
-            className="flex-1 text-base"
+            className="flex-1 text-base placeholder:text-neutral-400"
             placeholder={placeholder}
             value={value}
             onChangeText={onChangeText}
