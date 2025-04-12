@@ -20,7 +20,7 @@ export default function Index() {
             <Text className="text-white text-center font-helvetica-bold text-3xl">
               Secure Access, Simplified
             </Text>
-            <Text className="text-white/80 text-justify text-sm font-helvetica ">
+            <Text className="text-white/80 text-justify text-sm font-helvetica  ">
               Welcome to a seamless sign-in experience. With our modern
               authentication system powered by Appwrite, you can log in
               effortlessly and securely—so you can focus on what matters. Fast,
@@ -29,7 +29,7 @@ export default function Index() {
           </View>
           <CustomButton
             title="Get start"
-            buttonStyle="w-full mt-20"
+            buttonStyle="w-full mt-14"
             handlePress={getStartHandler}
           />
         </View>
