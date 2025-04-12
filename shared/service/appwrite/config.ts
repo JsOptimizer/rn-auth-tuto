@@ -21,4 +21,30 @@ export const authConfig = () => {
       console.log(error);
     }
   };
+
+  const signinHandler = async ({
+    email,
+    password,
+  }: {
+    email: string;
+    password: string;
+  }) => {
+    try {
+      const session = await account.createEmailPasswordSession(email, password);
+      return session;
+    } catch (error) {
+      throw error;
+    }
+  };
+
+  const signoutHandler = async () => {
+    try {
+      const session = await account.deleteSession("current");
+      console.log(session);
+    } catch (error) {
+      throw error;
+    }
+  };
+
+  return { signinHandler, signupHandler, signOutHandler: signoutHandler };
 };

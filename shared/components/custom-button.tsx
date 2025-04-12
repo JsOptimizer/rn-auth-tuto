@@ -30,6 +30,7 @@ const CustomButton: FC<Props> = ({
         <ActivityIndicator
           color={"#fff"}
           size={"small"}
+          className="ml-2"
           animating={isLoading}
         />
       )}
