@@ -7,7 +7,7 @@ import { ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const SignIn = () => {
-  const { inputs, setInputs, submitHandler, formStateError } =
+  const { inputs, setInputs, submitHandler, formStateError, isLoading } =
     useSignInHandler();
   return (
     <SafeAreaView className="bg-primary-950">
@@ -48,12 +48,13 @@ const SignIn = () => {
                 handlePress={submitHandler}
                 title="Sign In"
                 buttonStyle="mt-2"
+                isLoading={isLoading}
               />
               <View className="flex flex-row justify-end gap-2 py-2">
-                <Text className="text-white">Don't have an account ?</Text>
+                <Text className="text-white/90">Don't have an account ?</Text>
                 <Link
                   href={"/(auth)/sign-up"}
-                  className="text-primary-100 underline"
+                  className="text-primary-100 underline  font-helvetica-bold"
                 >
                   Sign up
                 </Link>

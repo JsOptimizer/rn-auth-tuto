@@ -7,14 +7,21 @@ export const useSignInHandler = () => {
     password: "",
   });
   const [formStateError, setFormStateError] = useState<TFormStateError>();
+  const [isLoading, setIsLoading] = useState<boolean>();
 
   const submitHandler = () => {
-    const validation = signInSchema.safeParse(inputs);
-    if (!validation.success) {
-      setFormStateError(() => validation.error.flatten().fieldErrors);
-      return;
+    try {
+      setIsLoading(true);
+      const validation = signInSchema.safeParse(inputs);
+      if (!validation.success) {
+        setFormStateError(() => validation.error.flatten().fieldErrors);
+        return;
+      }
+    } catch (error) {
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  return { inputs, setInputs, submitHandler, formStateError };
+  return { inputs, setInputs, submitHandler, formStateError, isLoading };
 };
