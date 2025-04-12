@@ -30,15 +30,13 @@ const CustomInput: FC<Props> = ({
   // Determine border color based on focus and error states
   const getBorderColor = () => {
     if (error) return "border-red-500";
-    if (isFocused) return "border-blue-500";
+    if (isFocused) return "border-primary-200";
     return "border-black-200";
   };
 
   return (
     <View className="gap-2 p-2">
-      <Text className="text-lg font-helvetica-bold text-neutral-600 ">
-        {title}
-      </Text>
+      <Text className="text-lg font-helvetica-bold text-white ">{title}</Text>
 
       <View>
         <View
