@@ -7,8 +7,9 @@ import {
   TRegister,
 } from "../types/user";
 
+const { signinHandler, signupHandler } = authConfig();
+
 export const useSignInHandler = () => {
-  const { signinHandler, signOutHandler } = authConfig();
   const [inputs, setInputs] = useState<{ email: string; password: string }>({
     email: "",
     password: "",
@@ -51,6 +52,8 @@ export const useSignUpHandler = () => {
         );
         return;
       }
+      const res = await signupHandler(credential);
+      console.log("registration submit", res);
     } catch (error) {
     } finally {
       setIsLoading((prev) => !prev);
