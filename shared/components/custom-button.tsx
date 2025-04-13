@@ -14,7 +14,7 @@ const CustomButton: FC<Props> = ({
   handlePress,
   buttonStyle,
   textStyle,
-  isLoading = false,
+  isLoading,
 }) => {
   return (
     <TouchableOpacity

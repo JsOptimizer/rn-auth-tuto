@@ -35,12 +35,12 @@ const CustomInput: FC<Props> = ({
   };
 
   return (
-    <View className="gap-2 p-2">
+    <View className="gap-2 p-2 w-full">
       <Text className=" font-helvetica-bold text-white ">{title}</Text>
 
       <View>
         <View
-          className={`w-full h-16 px-4 bg-neutral-100 rounded-2xl border-2 ${getBorderColor()} flex flex-row items-center`}
+          className={`w-full1 h-16 px-4 bg-neutral-100 rounded-2xl border-2 ${getBorderColor()} flex flex-row items-center`}
         >
           <TextInput
             className="flex-1 text-base placeholder:text-neutral-400"

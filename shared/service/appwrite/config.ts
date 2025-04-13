@@ -10,6 +10,7 @@ export const authConfig = () => {
   }: {
     email: string;
     password: string;
+    userName: string;
   }) => {
     try {
       const userId =
